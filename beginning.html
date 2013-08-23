@@ -16,8 +16,6 @@
 
 
 <h2 class="author">Michael Hartl </h2>
-<h2 class="author">(traducción de Fran J Martínez)</h2>
-
 
 <h2 class="contents">Contenido</h2>
 
@@ -400,31 +398,49 @@ El resto del tutorial se centra en el desarrollo de una aplicación de muestra g
 <h3><a id="sec-1_1_1" href="beginning.html#sec-comments_for_various_readers" class="heading"><span class="number">1.1.1</span> Comentarios para varios tipos de lectores</a></h3>
 
 <p>
-El <em>Tutorial de Rails</em> contiene tutoriales integrados no sólo para Rails, sino también para el lenguaje Ruby, el framework de tests RSpec, <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>, <a href="http://en.wikipedia.org/wiki/CSS">CSS</a>, un poco de <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, e incluso algo de <a href="http://en.wikipedia.org/wiki/SQL">SQL</a>. Esto significa que no importa donde te encuentres actualmente en tu conocimiento de desarrollo web, ya que para cuando termines este tutorial estarás preparado para utilizar los recursos más avanzados de Rails, y podrás utilizar de la forma más sistemática otros temas mencionados en el libro. A la vez, todo esto significa que hay una gran cantidad de material para aprender, y si no tienes <em>mucha</em> experiencia en programación, puede resultarte abrumador. Los comentarios que siguen contienen algunas sugerencias para abordar el <em>Tutorial de Rails</em> en función de tus antecedentes.
+	El <em>Tutorial de Rails</em> contiene tutoriales integrados no sólo para Rails, sino también para el lenguaje Ruby, el framework de tests RSpec, <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>, <a href="http://en.wikipedia.org/wiki/CSS">CSS</a>, un poco de <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, e incluso algo de <a href="http://en.wikipedia.org/wiki/SQL">SQL</a>. Esto significa que no importa donde te encuentres actualmente en tu conocimiento de desarrollo web, ya que para cuando termines este tutorial estarás preparado para utilizar los recursos más avanzados de Rails, y podrás utilizar de la forma más sistemática otros temas mencionados en el libro. A la vez, todo esto significa que hay una gran cantidad de material para aprender, y si no tienes <em>mucha</em> experiencia en programación, puede resultarte abrumador. Los comentarios que siguen contienen algunas sugerencias para abordar el <em>Tutorial de Rails</em> en función de tus antecedentes.
 </p>
 
 <p>
-<strong>Todos los lectores:</strong> Una pregunta típica al empezar con Rails es si se debe aprender Ruby previamente. No hay una respuesta única ya que depende de tu estilo personal de aprendizaje y de la experiencia de programación que puedas tener. Si eres de los que prefieren aprender todo de forma sistemática desde el principio, o si nunca has programado antes, entonces el aprendizaje previo de Ruby podría ser tu mejor opción, y te recomiendo empezar por <a href="http://www.amazon.com/gp/product/1430223634"><em>Beginning Ruby</em></a> de Peter Cooper.  Por otro lado, la mayoría de los aprendices de Rails están impacientes con escribir su primera aplicación <em>web</em> y prefieren evitar sudar tinta a través de un libro de 500 páginas sobre puro Ruby antes de haber escrito una sola página web. En este caso, recomiendo seguir el breve tutorial interactivo en <a href="http://tryruby.org/">Try Ruby</a>,<sup class="footnote" id="fnref-1_2"><a href="#fn-1_2">2</a></sup> y opcionalmente continuar por el tutorial gratuito <a href="http://railsforzombies.org/">Rails for Zombies</a><sup class="footnote" id="fnref-1_3"><a href="#fn-1_3">3</a></sup> para hacerte una idea de lo que Rails puede hacer.
+	<strong>Todos los lectores:</strong> Una pregunta típica al empezar con Rails es si se debe aprender Ruby previamente. No hay una respuesta única ya que depende de tu estilo personal de aprendizaje y de la experiencia de programación que puedas tener. Si eres de los que prefieren aprender todo de forma sistemática desde el principio, o si nunca has programado antes, entonces el aprendizaje previo de Ruby podría ser tu mejor opción, y te recomiendo empezar por <a href="http://www.amazon.com/gp/product/1430223634"><em>Beginning Ruby</em></a> de Peter Cooper.  Por otro lado, la mayoría de los aprendices de Rails están impacientes con escribir su primera aplicación <em>web</em> y prefieren evitar sudar tinta a través de un libro de 500 páginas sobre puro Ruby antes de haber escrito una sola página web. En este caso, recomiendo seguir el breve tutorial interactivo en <a href="http://tryruby.org/">Try Ruby</a>,<sup class="footnote" id="fnref-1_2"><a href="#fn-1_2">2</a></sup> y opcionalmente continuar por el tutorial gratuito <a href="http://railsforzombies.org/">Rails for Zombies</a><sup class="footnote" id="fnref-1_3"><a href="#fn-1_3">3</a></sup> para hacerte una idea de lo que Rails puede hacer.
 </p>
 
-<p>Otra pregunta típica es si se deben realizar tests desde el principio. Como se señaló en la introducción, el <em>Tutorial de Ruby on Rails</em> utiliza el <em>test-driven development</em> (desarrollo basado en pruebas), que en mi opinión es la mejor manera de desarrollar aplicaciones Rails, aunque añade una cantidad sustancial de complejidad y trabajo. Si en algún momento te encuentras abrumado por las pruebas, te sugiero que las omitas en una primera lectura o (mejor aún) que las uses como una herramienta para verificar la exactitud del código sin preocuparte de cómo funcionan. Esta última estrategia implica la creación de los archivos de prueba necesarios (llamados <em>specs</em>) y llenarlos con el código del test tal y como aparece en el libro. A continuación, puedes ejecutar el conjunto de pruebas (como se describe en el <a class="ref" href="filling-in-the-layout.html#top">capítulo 5</a>) para ver qué falla, y seguidamente, escribir el código de la aplicación como se describe en el tutorial, para finalmente, volver a ejecutar el conjunto de pruebas para verlas pasar correctamente.</p>
+<p>
+	Otra pregunta típica es si se deben realizar tests desde el principio. Como se señaló en la introducción, el <em>Tutorial de Ruby on Rails</em> utiliza el <em>test-driven development</em> (desarrollo basado en pruebas), que en mi opinión es la mejor manera de desarrollar aplicaciones Rails, aunque añade una cantidad sustancial de complejidad y trabajo. Si en algún momento te encuentras abrumado por las pruebas, te sugiero que las omitas en una primera lectura o (mejor aún) que las uses como una herramienta para verificar la exactitud del código sin preocuparte de cómo funcionan. Esta última estrategia implica la creación de los archivos de prueba necesarios (llamados <em>specs</em>) y llenarlos con el código del test tal y como aparece en el libro. A continuación, puedes ejecutar el conjunto de pruebas (como se describe en el <a class="ref" href="filling-in-the-layout.html#top">capítulo 5</a>) para ver qué falla, y seguidamente, escribir el código de la aplicación como se describe en el tutorial, para finalmente, volver a ejecutar el conjunto de pruebas para verlas pasar correctamente.
+</p>
 
-<p><strong>Programadores sin experiencia:</strong> El <em>Tutorial de Rails</em> no está pensado para programadores principiantes, ya que hasta las aplicaciones web más sencillas tienen una naturaleza bastante compleja. Si eres completamente principiante en la programación web y encuentras que el <em>Tutorial de Rails</em> es demasiado difícil, te sugiero aprender los conceptos básicos de HTML y CSS antes de volver a probar el <em>Tutorial de Rails</em>. (Desgraciadamente, no tengo una recomendación personal, pero el tutorial <a href="http://headfirstlabs.com/books/hfhtml/"><em>Head First HTML</em></a> parece prometedor, y uno de los lectores recomienda el tutorial <a href="http://www.amazon.com/gp/product/0596526873"><em>CSS: The Missing Manual</em></a> de David Sawyer McFarland). También puedes considerar la lectura de los primeros capítulos de <a href="http://www.amazon.com/gp/product/1430223634"><em>Beginning Ruby</em></a> de Peter Cooper, que empieza con pequeñas aplicaciones de ejemplo más sencillas que una web completa. Debo decir, que un sorprendente número de principiantes han utilizado este tutorial para aprender desarrollo web, así que sugiero darle una oportunidad, y especialmente recomiendo la <a href="http://railstutorial.org/screencasts">serie de screencasts del <em>Rails Tutorial</em></a><sup class="footnote" id="fnref-1_4"><a href="#fn-1_4">4</a></sup> para darle un vistazo al desarrollo de software con Rails.</p>
+<p>
+	<strong>Programadores sin experiencia:</strong> El <em>Tutorial de Rails</em> no está pensado para programadores principiantes, ya que hasta las aplicaciones web más sencillas tienen una naturaleza bastante compleja. Si eres completamente principiante en la programación web y encuentras que el <em>Tutorial de Rails</em> es demasiado difícil, te sugiero aprender los conceptos básicos de HTML y CSS antes de volver a probar el <em>Tutorial de Rails</em>. (Desgraciadamente, no tengo una recomendación personal, pero el tutorial <a href="http://headfirstlabs.com/books/hfhtml/"><em>Head First HTML</em></a> parece prometedor, y uno de los lectores recomienda el tutorial <a href="http://www.amazon.com/gp/product/0596526873"><em>CSS: The Missing Manual</em></a> de David Sawyer McFarland). También puedes considerar la lectura de los primeros capítulos de <a href="http://www.amazon.com/gp/product/1430223634"><em>Beginning Ruby</em></a> de Peter Cooper, que empieza con pequeñas aplicaciones de ejemplo más sencillas que una web completa. Debo decir, que un sorprendente número de principiantes han utilizado este tutorial para aprender desarrollo web, así que sugiero darle una oportunidad, y especialmente recomiendo la <a href="http://railstutorial.org/screencasts">serie de screencasts del <em>Rails Tutorial</em></a><sup class="footnote" id="fnref-1_4"><a href="#fn-1_4">4</a></sup> para darle un vistazo al desarrollo de software con Rails.
+</p>
 
 
-<p><strong>Programadores con experiencia nuevos en el desarrollo web:</strong> Tu experiencia previa significa que probablemente ya entiendes conceptos como clases, métodos, estructuras de datos, etc, lo cual es una gran ventaja. Ten en cuenta que si tu formación es en C/C++ o Java, es posible que Ruby te parezca un bicho raro, y puede ser que necesites un tiempo para acostumbrarse a él; simplemente acostúmbrate a él hasta que te sientas cómodo. (Ruby, incluso te permite poner punto y coma al final de las líneas si lo llegas a echar de menos.) El Tutorial Rails cubre todas las ideas específicos que necesitas para el desarrollo Web, así que no te preocupes si no sabes actualmente que es un <tt>POST</tt> de un <tt>PATCH</tt>.</p>
+<p>
+	<strong>Programadores con experiencia nuevos en el desarrollo web:</strong> Tu experiencia previa significa que probablemente ya entiendes conceptos como clases, métodos, estructuras de datos, etc, lo cual es una gran ventaja. Ten en cuenta que si tu formación es en C/C++ o Java, es posible que Ruby te parezca un bicho raro, y puede ser que necesites un tiempo para acostumbrarse a él; simplemente acostúmbrate a él hasta que te sientas cómodo. (Ruby, incluso te permite poner punto y coma al final de las líneas si lo llegas a echar de menos.) El Tutorial Rails cubre todas las ideas específicos que necesitas para el desarrollo Web, así que no te preocupes si no sabes actualmente que es un <tt>POST</tt> de un <tt>PATCH</tt>.
+</p>
 
-<p><strong>Desarrolladores web con experiencia, nuevos en Rails</strong>: Tienes una gran ventaja especialmente si has usado un lenguaje dinámico como PHP o, aún mejor, Python. Los fundamentos cubiertos en el manual te resultarán familiares, pero el <em>test-driven development</em> puede que sea nuevo para tí, así como el estilo de estructura REST utilizada por Rails. Ruby tiene su propia idiosincrasia, por lo que te puede resultar todo bastante nuevo aunque tengas experiencia en desarrollo web.</p>
+<p>
+	<strong>Desarrolladores web con experiencia, nuevos en Rails</strong>: Tienes una gran ventaja especialmente si has usado un lenguaje dinámico como PHP o, aún mejor, Python. Los fundamentos cubiertos en el manual te resultarán familiares, pero el <em>test-driven development</em> puede que sea nuevo para tí, así como el estilo de estructura REST utilizada por Rails. Ruby tiene su propia idiosincrasia, por lo que te puede resultar todo bastante nuevo aunque tengas experiencia en desarrollo web.
+</p>
 
-<p><strong>Programadores con experiencia en Ruby:</strong> El conjunto de programadores Ruby que no conocen Rails es pequeño a día de hoy, pero si eres miembro de este grupo de élite puedes volar a través de este libro y luego seguir con el desarrollo de tus propias aplicaciones.</p>
+<p>
+	<strong>Programadores con experiencia en Ruby:</strong> El conjunto de programadores Ruby que no conocen Rails es pequeño a día de hoy, pero si eres miembro de este grupo de élite puedes volar a través de este libro y luego seguir con el desarrollo de tus propias aplicaciones.
+</p>
 
-<p><strong>Programadores Rails sin experiencia</strong>: Tal vez hayas leído algunos otros tutoriales y hayas hecho algunas pequeñas aplicaciones Rails. Basado en comentarios de los lectores, estoy seguro de que aún así puedes sacar mucho de este libro. Entre otras cosas, las técnicas aquí pueden estar más actualizadas que las que adquiriste cuando aprendiste Rails por primera vez.</p>
+<p>
+	<strong>Programadores Rails sin experiencia</strong>: Tal vez hayas leído algunos otros tutoriales y hayas hecho algunas pequeñas aplicaciones Rails. Basado en comentarios de los lectores, estoy seguro de que aún así puedes sacar mucho de este libro. Entre otras cosas, las técnicas aquí pueden estar más actualizadas que las que adquiriste cuando aprendiste Rails por primera vez.
+</p>
 
-<p><strong>Programadores Rails con experiencia</strong>: Este libro no es necesario para tí, pero muchos desarrolladores experimentados han expresado su sorpresa al ver todo lo que han aprendido con este libro. Ahora disfrutan utilizando con Rails desde otra perspectiva. </p>
+<p>
+	<strong>Programadores Rails con experiencia</strong>: Este libro no es necesario para tí, pero muchos desarrolladores experimentados han expresado su sorpresa al ver todo lo que han aprendido con este libro. Ahora disfrutan utilizando con Rails desde otra perspectiva.
+</p>
 
-<p>Después de acabar el <em>Tutorial de Ruby on Rails</em> recomiendo que los programadores con experiencia lean <a href="http://www.amazon.com/gp/product/1933988657"><em>The Well-Grounded Rubyist</em></a> por David&nbsp;A. Black, <a href="www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104/"><em>Eloquent Ruby</em></a> por Russ Olsen, o <a href="http://www.amazon.com/gp/product/0672328844"><em>The Ruby Way</em></a> por Hal Fulton, que aunque es bastante avanzado tiene un enfoque más actual.</p>
+<p>
+	Después de acabar el <em>Tutorial de Ruby on Rails</em> recomiendo que los programadores con experiencia lean <a href="http://www.amazon.com/gp/product/1933988657"><em>The Well-Grounded Rubyist</em></a> por David&nbsp;A. Black, <a href="www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104/"><em>Eloquent Ruby</em></a> por Russ Olsen, o <a href="http://www.amazon.com/gp/product/0672328844"><em>The Ruby Way</em></a> por Hal Fulton, que aunque es bastante avanzado tiene un enfoque más actual.
+</p>
 
-<p>Al final de este proceso, no importa cuando empieces, estarás preparado para los recursos de Rails más <em>intermediate-to-advanced</em>. Aquí os dejo algunos de los que os recomiendo:</p>
+<p>
+	Al final de este proceso, no importa cuando empieces, estarás preparado para los recursos de Rails más <em>intermediate-to-advanced</em>. Aquí os dejo algunos de los que os recomiendo:
+</p>
 
 <ul>
 
@@ -439,99 +455,110 @@ El <em>Tutorial de Rails</em> contiene tutoriales integrados no sólo para Rails
 
 
 
-<h3><a id="sec-1_1_2" href="beginning.html#sec-1_1_2" class="heading"><span class="number">1.1.2</span> &ldquo;Scaling&rdquo; Rails</a></h3>
+<h3><a id="sec-1_1_2" href="beginning.html#sec-1_1_2" class="heading"><span class="number">1.1.2</span> &ldquo;Escalando&rdquo; Rails</a></h3>
+
+<p>
+	Antes de continuar con el resto de la introducción, me gustaría hablar brevemente sobre el tema que más persiguió al framework de Rails en sus inicios: la supuesta incapacidad de escalabilidad de Rails, es decir, para manejar grandes cantidades de tráfico. Parte de este problema se basó en una interpretación errónea; <a href="http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/">puedes escalar un <em>site</em>, no un framework</a>, y Rails, por impresionante que sea, es sólo un framework. Así que la verdadera pregunta debería haber sido: "¿Se puede escalar un sitio construido con Rails?" En cualquier caso, la cuestión ha sido ahora definitivamente respondida afirmativamente: algunos de los sitios con más tráfico del mundo usan Rails. En realidad la escalabilidad está fuera del alcance de Rails por sí solo, pero ten por seguro que si alguna vez necesitas que tu aplicación gestione la carga de Hulu o las páginas amarillas, Rails no te impedirá conquistar el mundo.
+</p>
 
 
-<p>Before moving on with the rest of the introduction, I&rsquo;d like to take a moment to address the one issue that dogged the Rails framework the most in its early days: the supposed inability of Rails to &ldquo;scale&rdquo;&mdash;i.e., to handle large amounts of traffic. Part of this issue relied on a misconception; <a href="http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/">you scale a <em>site</em>, not a framework</a>, and Rails, as awesome as it is, is only a framework. So the real question should have been, &ldquo;Can a site built with Rails scale?&rdquo; In any case, the question has now been definitively answered in the affirmative: some of the most heavily trafficked sites in the world use Rails. Actually <em>doing</em> the scaling is beyond the scope of just Rails, but rest assured that if <em>your</em> application ever needs to handle the load of Hulu or the Yellow Pages, Rails won&rsquo;t stop you from taking over the world.</p>
 
 <div class="label" id="sec-conventions"></div>
 
 
-<h3><a id="sec-1_1_3" href="beginning.html#sec-conventions" class="heading"><span class="number">1.1.3</span> Conventions in this book</a></h3>
+<h3><a id="sec-1_1_3" href="beginning.html#sec-conventions" class="heading"><span class="number">1.1.3</span> Convenciones de este libro</a></h3>
 
 
-<p>The conventions in this book are mostly self-explanatory. In this section, I&rsquo;ll mention some that may not be.</p>
+<p>Las convenciones de este libro son bastante autoexplicativas. En esta sección, voy a mencionar algunas que pueden no serlo.</p>
 
-<p>Both the <a href="http://railstutorial.org/book">HTML</a> and <a href="http://railstutorial.org/">PDF</a> editions of this book are full of links, both to internal sections (such as <a class="ref" href="beginning.html#sec-up_and_running">Section&nbsp;1.2</a>) and to external sites (such as the main <a href="http://rubyonrails.org/download">Ruby on Rails download</a> page).<sup class="footnote" id="fnref-1_5"><a href="#fn-1_5">5</a></sup></p>
+<p>
+	Tanto la edición de <a href="http://railstutorial.org/book">HTML</a> como la de <a href="http://railstutorial.org/">PDF</a> están llenas de links, tanto a sessiones internas (como la <a class="ref" href="beginning.html#sec-up_and_running">Sección&nbsp;1.2</a>)  como a sitios externos (como los principales páginas de <a href="http://rubyonrails.org/download">descarga de Ruby on Rails</a>).<sup class="footnote" id="fnref-1_5"><a href="#fn-1_5">5</a></sup>
+</p>
 
-<p>Many examples in this book use command-line commands. For simplicity, all command line examples use a Unix-style command line prompt (a dollar sign), as follows:</p>
+<p>
+	Muchos de los ejemplos de este libro utilizan la línea de comandos. Por simplicidad, todos los ejemplos de este tipo utilizan el estilo de línea de comandos de UNIX (con el símbolo del dólar), de la siguiente manera:
+</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;hello, world&quot;</span>
 <span class="go">hello, world</span>
 </pre></div>
 </div>
 
-
-<p>Windows users should understand that their systems will use the analogous angle prompt&nbsp;<code>&gt;</code>:</p>
+<p>Los usuarios de Windows deben entender que sus sistemas utilizarán el sistema análogo:</p>
 
 <div class="code"><div class="highlight"><pre><span class="go">C:\Sites&gt; echo &quot;hello, world&quot;</span>
 <span class="go">hello, world</span>
 </pre></div>
 </div>
 
+<p>
+	En los sistemas Unix, algunos comandos deben ser ejecutados como <code>sudo</code>, que significa &ldquo;substitute user do&rdquo;.<sup class="footnote" id="fnref-1_6"><a href="#fn-1_6">6</a></sup> Por defecto, un comando ejecutado como <code>sudo</code> se ejecuta como usuario administrador, que tiene acceso a ficheros y directorios que el usuario normal no puedo tocar, como en este ejemplo de la <a class="ref" href="beginning.html#sec-rubygems">Seccion 1.2.2:</a>
+</p>
 
-<p>On Unix systems, some commands should be executed with <code>sudo</code>, which stands for &ldquo;substitute user do&rdquo;.<sup class="footnote" id="fnref-1_6"><a href="#fn-1_6">6</a></sup> By default, a command executed with <code>sudo</code> is run as an administrative user, which has access to files and directories that normal users can&rsquo;t touch, such as in this example from <a class="ref" href="beginning.html#sec-rubygems">Section&nbsp;1.2.2</a>:</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> sudo ruby setup.rb
 </pre></div>
 </div>
 
-
-<p>Most Unix/Linux/OS&nbsp;X systems require <code>sudo</code> by default, unless you are using Ruby Version Manager as suggested in <a class="ref" href="beginning.html#sec-install_ruby">Section&nbsp;1.2.2.3</a>; in this case, you would type this instead:</p>
+<p>
+	La mayoría de los sistemas Unix/Linux/OS X requieren <code>sudo</code> de forma predeterminada, salvo que esté usuando Ruby Version Manager, como se sugiere en la <a class="ref" href="beginning.html#sec-install_ruby">Sección&nbsp;1.2.2.3</a>; En ese caso, tendrás que escribir esto:
+</p>
 
 <div class="code"><div class="highlight"><pre><span class="gp">$</span> ruby setup.rb
 </pre></div>
 </div>
 
-
-<p>Rails comes with lots of commands that can be run at the command line. For example, in <a class="ref" href="beginning.html#sec-rails_server">Section&nbsp;1.2.5</a> we&rsquo;ll run a local development web server as follows:</p>
+<p>
+	Rails viene con un montón de comandos que se pueden ejecutar en la línea de comandos. Por ejemplo, en la <a class="ref" href="beginning.html#sec-rails_server">Sección 1.2.5</a> ejecutaremos un servidor web de desarrollo local de la siguiente manera:
+</p>
 
 <div class="code"><div class="highlight"><pre><span class="nv">$ </span>rails server
 </pre></div>
 </div>
 
-
-<p>As with the command-line prompt, the <em>Rails Tutorial</em> uses the Unix convention for directory separators (i.e., a forward slash&nbsp;<code>/</code>). My Rails Tutorial sample application, for instance, lives in</p>
+<p>
+	Al igual que con el prompt de la línea de comandos, el <em>Tutorial de Rails</em> utiliza el convenio de UNIX para los separadores de directorio (por ejemplo, una barra lateral <code>/</code>). Por ejemplo, mi aplicación de ejemplo del Tutorial de Rails está en
+</p>
 
 <div class="code"><div class="highlight"><pre>/Users/mhartl/rails_projects/sample_app
 </pre></div>
 </div>
 
-
-<p>On Windows, the analogous directory would be</p>
+<p>En Windows, el directorio análogo sería</p>
 
 <div class="code"><div class="highlight"><pre>C:\Sites\sample_app
 </pre></div>
 </div>
 
-
-<p>The root directory for any given app is known as the <em>Rails root</em>, but this terminology is confusing and many people mistakenly believe that the &ldquo;Rails root&rdquo; is the root directory for Rails itself. For clarity, the <em>Rails Tutorial</em> will refer to the Rails root as the <em>application root</em>, and henceforth all directories will be relative to this directory. For example, the <code>config</code> directory of my sample application is</p>
+<p>
+	El directorio raíz para cualquier aplicación se conoce como la <em>raíz de Rails</em>, pero esta terminología es confusa y muchas personas creen erróneamente que la "raíz de Rails" es el directorio raíz de Rails en sí mismo. Para mayor claridad, el <em>Tutorial de Rails</em> se refiere a la raíz de Rails como la raíz de la aplicación, y en adelante todos los directorios serán relativos a este directorio. Por ejemplo, el directorio de configuración de mi aplicación de ejemplo es
+</p>
 
 <div class="code"><div class="highlight"><pre>/Users/mhartl/rails_projects/sample_app/config
 </pre></div>
 </div>
 
-
-<p>The application root directory here is everything before <code>config</code>, i.e.,</p>
+<p>En este ejemplo, el directorio raíz de la aplicación es en este caso todo lo anterior a <code>config</code>:</p>
 
 <div class="code"><div class="highlight"><pre>/Users/mhartl/rails_projects/sample_app
 </pre></div>
 </div>
 
-
-<p>For brevity, when referring to the file</p>
+<p>Para abreviar, cuando me quiera referir al fichero:</p>
 
 <div class="code"><div class="highlight"><pre>/Users/mhartl/rails_projects/sample_app/config/routes.rb
 </pre></div>
 </div>
 
+<p>Omitiré la raíz de la aplicación y escribiré simplemente <code>config/routes.rb</code>.</p>
 
-<p>I&rsquo;ll omit the application root and simply write <code>config/routes.rb</code>.</p>
+<p>
+	El <em>Tutorial de Rails</em> a menudo muestra el resultado de varios programas (comandos de la shell, el estado de control de versiones, programas de Ruby, etc.) Debido a las innumerables pequeñas diferencias entre los distintos sistemas informáticos, la salida que puedas ver no siempre coincidirá exactamente con lo que se muestra en el texto, pero esto no debería ser motivo de preocupación.
+</p>
 
-<p>The <em>Rails Tutorial</em> often shows output from various programs (shell commands, version control status, Ruby programs, etc.). Because of the innumerable small differences between different computer systems, the output you see may not always agree exactly with what is shown in the text,
-but this is not cause for concern.</p>
-
-<p>Some commands may produce errors depending on your system; rather than attempt the <a href="http://en.wikipedia.org/wiki/Sisyphus">Sisyphean</a> task of documenting all such errors in this tutorial, I will delegate to the &ldquo;Google the error message&rdquo; algorithm, which among other things is good practice for real-life software development. If you run into any problems while following the tutorial, I suggest consulting the resources listed on the <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.<sup class="footnote" id="fnref-1_7"><a href="#fn-1_7">7</a></sup></p>
+<p>
+	Algunos comandos pueden producir errores en función de su sistema; en lugar de intentar la <a href="http://en.wikipedia.org/wiki/Sisyphus">Sisyphean</a> tarea de documentar todos estos errores en este tutorial, voy a delegar en el algoritmo de "Googlea el mensaje de error", que entre otras cosas es una buena práctica para el desarrollo de software en la vida real. Si surge algún problema al seguir el tutorial, te sugiero consultar los recursos que aparecen en la <a href="http://railstutorial.org/help">página de ayuda del Tutorial de Rails</a>.<sup class="footnote" id="fnref-1_7"><a href="#fn-1_7">7</a></sup>
+</p>
 
 <div class="label" id="sec-up_and_running"></div>
 
